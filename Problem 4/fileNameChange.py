@@ -1,5 +1,6 @@
+import courseGrade
 def fileNameChange():
-    file_name = input().strip()
+    file_name = input("Enter the name of the text file: ")
     with open(file_name, 'r') as file:
         photo_names = file.readlines()
     for photo_name in photo_names:
